@@ -109,6 +109,16 @@ form[action$="destroy"] button {
   display: flex;
   flex-direction: column;
 }
+@media(prefers-color-scheme: dark) {
+  #sidebar {
+    width: 22rem;
+    background-color: #1f2023;
+    border-right: solid 1px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 #sidebar > * {
   padding-left: 2rem;
@@ -226,7 +236,7 @@ i {
 }
 
 #sidebar nav a:hover {
-  background: #e3e3e3;
+  background: darkgrey;
 }
 
 #sidebar nav a.active {
